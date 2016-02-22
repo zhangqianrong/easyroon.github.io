@@ -2,7 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2016/02/17/My-first-post/</loc>
+    <loc>http://yoursite.com/2016/02/22/Mac-os%E4%B8%8Bhexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%A9%BA%E9%97%B4/</loc>
+    
+    <lastmod>2016-02-22T10:13:53.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/02/17/%E5%A7%8B%E4%BA%8EHexo+Github/</loc>
     
     <lastmod>2016-02-22T06:09:35.000Z</lastmod>
     
@@ -26,13 +33,6 @@
     <loc>http://yoursite.com/tags/index.html</loc>
     
     <lastmod>2016-02-17T06:44:25.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/02/17/hello-world/</loc>
-    
-    <lastmod>2016-02-17T04:21:59.000Z</lastmod>
     
   </url>
   
