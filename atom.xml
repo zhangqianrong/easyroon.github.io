@@ -1,36 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>EsayRoon&#39;s Notes</title>
-  
+  <subtitle>Walk steps</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-02-17T07:50:40.000Z</updated>
+  <updated>2016-02-22T03:27:54.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>Zhangqianrong</name>
+    <name>Qianrong Zhang</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>My first post</title>
+    <title>Hexo+Github完成搭建个人博客</title>
     <link href="http://yoursite.com/2016/02/17/My-first-post/"/>
     <id>http://yoursite.com/2016/02/17/My-first-post/</id>
     <published>2016-02-17T05:22:49.000Z</published>
-    <updated>2016-02-17T07:50:40.000Z</updated>
+    <updated>2016-02-22T03:27:54.000Z</updated>
     
-    <content type="html">&lt;p&gt;这是我的第一篇文章,关于这个博客,觉得是记述自己生活的一个去处&lt;/p&gt;
+    <content type="html">&lt;p&gt;在经历了爬贴无数之后,终于完成了这个个人博客,在QQ空间时代,没事还可以发发牢骚&lt;/p&gt;
+&lt;p&gt;毕业了,渐渐的也就把文字丢了,这几天看了很多人的博客,感触颇深,更加坚定了搭建一个自己空间的想法,记录一些自己的文字.&lt;/p&gt;
+&lt;p&gt;但行好事,莫问前程!&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;这是我的第一篇文章,关于这个博客,觉得是记述自己生活的一个去处&lt;/p&gt;
+      &lt;p&gt;在经历了爬贴无数之后,终于完成了这个个人博客,在QQ空间时代,没事还可以发发牢骚&lt;/p&gt;
+&lt;p&gt;毕业了,渐渐的也就把文字丢了,这几天看了很多人的博客,感触颇深,更加坚定了搭建一个自己空间的想法,记录一些自己的文字.&lt;/p&gt;
+&lt;p&gt;但行好事,莫问前程!&lt;/p&gt;
 
     
     </summary>
+    
+      <category term="思考" scheme="http://yoursite.com/categories/%E6%80%9D%E8%80%83/"/>
     
     
   </entry>
