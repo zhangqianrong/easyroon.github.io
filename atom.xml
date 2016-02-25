@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-02-25T06:48:24.000Z</updated>
+  <updated>2016-02-25T07:07:50.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,14 +20,14 @@
     <link href="http://yoursite.com/2016/02/22/Mac-os%E4%B8%8Bhexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%A9%BA%E9%97%B4/"/>
     <id>http://yoursite.com/2016/02/22/Mac-os下hexo-github搭建个人空间/</id>
     <published>2016-02-22T06:57:19.000Z</published>
-    <updated>2016-02-25T06:48:24.000Z</updated>
+    <updated>2016-02-25T07:07:50.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;爬贴无数,终于搭建起来了,把遇到的问题和如何解决的记录一下,万一你看到了,有帮助到你也是极好的.&lt;/p&gt;
 &lt;h2 id=&quot;准备&quot;&gt;&lt;a href=&quot;#准备&quot; class=&quot;headerlink&quot; title=&quot;准备&quot;&gt;&lt;/a&gt;准备&lt;/h2&gt;&lt;p&gt; &lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Github&lt;/a&gt;上创建一个属于你自己的账户,然后创建一个新的仓库,并且命名为&lt;em&gt;YourSiteName.github.io/com&lt;/em&gt;,此时Gitub会帮助你初始化一个静态网页,准备工作就结束了,尝试访问一下你创建的站点,成功后就可以开始动工了.(我自己的用的是MAC OS 10.10.5的系统,Win系统需要自行安装Git客户端)&lt;br&gt; &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;关于Hexo&quot;&gt;&lt;a href=&quot;#关于Hexo&quot; class=&quot;headerlink&quot; title=&quot;关于Hexo&quot;&gt;&lt;/a&gt;关于Hexo&lt;/h2&gt;&lt;h3 id=&quot;hexo介绍&quot;&gt;&lt;a href=&quot;#hexo介绍&quot; class=&quot;headerlink&quot; title=&quot;hexo介绍&quot;&gt;&lt;/a&gt;hexo介绍&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;A fast, simple &amp;amp; powerful blog framework&lt;br&gt;快速，简单而高效的静态博客框架&lt;br&gt;超快速度： Node.js 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染。&lt;br&gt;支持 Markdown： Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress的大多数插件。&lt;br&gt;一键部署： 只需一条指令即可部署到 GitHub Pages, Heroku 或其他网站。&lt;br&gt;丰富的插件： Hexo 拥有强大的插件系统，安装插件可以让 Hexo 支持 Jade, CoffeeScript。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&quot;关于NexT主题&quot;&gt;&lt;a href=&quot;#关于NexT主题&quot; class=&quot;headerlink&quot; title=&quot;关于NexT主题&quot;&gt;&lt;/a&gt;关于NexT主题&lt;/h3&gt;&lt;p&gt; &lt;img src=&quot;http://7xr4es.com1.z0.glb.clouddn.com/Snip20160222_2.png&quot; alt=&quot;NexT主题&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;关于NexT主题&quot;&gt;&lt;a href=&quot;#关于NexT主题&quot; class=&quot;headerlink&quot; title=&quot;关于NexT主题&quot;&gt;&lt;/a&gt;关于NexT主题&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7xr4es.com1.z0.glb.clouddn.com/Snip20160222_2.png&quot; alt=&quot;NexT主题&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;NexT 主旨在于简洁优雅且易于使用，所以首先要尽量确保 NexT 的简洁易用性。&lt;/p&gt;
 &lt;p&gt;NexT is built for easily use with elegant appearance. First things first, always keep things simple.&lt;/p&gt;
@@ -39,39 +39,32 @@
 &lt;blockquote&gt;
 &lt;p&gt;hexo安装和搭建依赖&lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Nodejs&lt;/a&gt;和Git,可以自行下载.&lt;br&gt;安装nodejs方法很多,在MAC下可以用homebrew方式安装&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;安装brewhome&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ ruby &lt;span class=&quot;operator&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;&lt;span class=&quot;variable&quot;&gt;$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)&lt;/span&gt;”&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;``` &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;安装nodejs&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;``` bash&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ brew install node&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;安装brewhome&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ ruby &lt;span class=&quot;operator&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;&lt;span class=&quot;variable&quot;&gt;$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)&lt;/span&gt;”&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;``` &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;安装nodejs&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;``` bash&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ brew install node&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;或者是在git下安装:&lt;/p&gt;
 &lt;figure class=&quot;highlight crmsh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ git &lt;span class=&quot;keyword&quot;&gt;clone&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;git&lt;/span&gt;://github.com/joyent/&lt;span class=&quot;keyword&quot;&gt;node&lt;/span&gt;.&lt;span class=&quot;identifier&quot;&gt;&lt;/span&gt;&lt;span class=&quot;title&quot;&gt;git&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ cd &lt;span class=&quot;keyword&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;identifier&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;span class=&quot;title&quot;&gt;$&lt;/span&gt; ./configure&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ make&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ sudo make install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol&gt;
-&lt;li&gt;安装Hexo&lt;br&gt; 第一种方式,用nodejs自带npm安装&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;安装Hexo&lt;br&gt;第一种方式,用nodejs自带npm安装&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm install -g hexo&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ hexo init&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ npm install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;配置Git&lt;/p&gt;
-&lt;p&gt; 安装git&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;figure class=&quot;highlight armasm&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sudo &lt;span class=&quot;keyword&quot;&gt;brew &lt;/span&gt;install git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;配置Git&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;安装git
+&lt;/code&gt;&lt;/pre&gt;&lt;figure class=&quot;highlight armasm&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sudo &lt;span class=&quot;keyword&quot;&gt;brew &lt;/span&gt;install git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;配置&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ &lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; ~/.ssh  //检查SSH KEY&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ ssh-keygen -t rsa -C &lt;span class=&quot;string&quot;&gt;&quot;xxxxx@xxx.com&quot;&lt;/span&gt; //生成&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;将ssh key添加到Github&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Account Settings-&amp;gt;SSH Public Keys-&amp;gt;Add another key将生成的key(id_rsa.pub文件）内容copy到输入框中，save。            &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;测试连接&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ ssh git@github.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;初始化HEXO框架&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;测试连接&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ ssh git@github.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;初始化HEXO框架&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo init&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ &lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; &amp;lt;Folder&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ npm install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt; &lt;strong&gt;PS: 在Hexo3中,hexo-server独立出来了,如要本地调试,需要先安装&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;PS: 在Hexo3中,hexo-server独立出来了,如要本地调试,需要先安装&lt;/strong&gt;&lt;/p&gt;
  &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm install hexo-server --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;初始化完成后的目录&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;初始化完成后的目录&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;├── _config.yml //网站的 配置 信息，您可以在此配置大部分的参数。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── package.json&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── scaffolds 	//模版 文件夹。当您新建文章时，Hexo 会根据 scaffold 来建立文件。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── &lt;span class=&quot;built_in&quot;&gt;source&lt;/span&gt; 	//资源文件夹是存放用户资源的地方。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|   ├── _drafts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|   └── _posts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;└── themes 	//主题 文件夹。Hexo 会根据主题来生成静态页面。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;##Hexo新建文章&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new [layout] &lt;span class=&quot;string&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;Hexo新建文章&quot;&gt;&lt;a href=&quot;#Hexo新建文章&quot; class=&quot;headerlink&quot; title=&quot;Hexo新建文章&quot;&gt;&lt;/a&gt;Hexo新建文章&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new [layout] &lt;span class=&quot;string&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;strong&gt;在 /source/_post 里添加 hello-world.md 文件，之后新建的文章都将存放在此目录下。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;##生成网站&lt;/p&gt;
-&lt;ul&gt;
+&lt;h2 id=&quot;生成网站&quot;&gt;&lt;a href=&quot;#生成网站&quot; class=&quot;headerlink&quot; title=&quot;生成网站&quot;&gt;&lt;/a&gt;生成网站&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;生成&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate   //后期可以用hexo g代替&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -80,8 +73,7 @@
 &lt;li&gt;服务器部署&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server --debug&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;或者是&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server -p &lt;span class=&quot;number&quot;&gt;3000&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;根据提示完成即可&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;##部署完成后的hexo到github&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;部署完成后的hexo到github&quot;&gt;&lt;a href=&quot;#部署完成后的hexo到github&quot; class=&quot;headerlink&quot; title=&quot;部署完成后的hexo到github&quot;&gt;&lt;/a&gt;部署完成后的hexo到github&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;strong&gt;部署网站之前需要生成静态文件，即可以用 $ hexo generate -d 直接生成并部署。此时需要在 _config.yml 中配置你所要部署的站点&lt;/strong&gt;：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;## Docs: http://hexo.io/docs/deployment.html
 deploy:
