@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://yoursite.com/2016/02/22/Mac-os%E4%B8%8Bhexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%A9%BA%E9%97%B4/</loc>
-    <lastmod>2016-03-13T03:59:39.000Z</lastmod>
+    <lastmod>2016-03-30T02:11:45.000Z</lastmod>
     <data>
         <display>
         <title>Mac os下hexo+github搭建个人博客</title>
@@ -19,6 +19,26 @@
            
              
               <breadCrumb title="Hexo" url="http://yoursite.com/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/03/30/%E5%B7%A5%E4%BD%9C%E4%B8%80%E5%B9%B4%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2016-03-30T02:11:17.000Z</lastmod>
+    <data>
+        <display>
+        <title>工作一年总结</title>
+        <pubTime>2016-03-30T01:43:23.000Z</pubTime>
+        
+        <tag>总结</tag>
+         
+         
+           
+             
+              <breadCrumb title="感悟" url="http://yoursite.com/categories/%E6%84%9F%E6%82%9F/"/>
           
         </display>
     </data>
