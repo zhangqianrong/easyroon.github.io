@@ -3,10 +3,9 @@
 
 
     
-    
   <url>
     <loc>http://yoursite.com/2016/03/31/2016-3-31%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2016-03-31T02:44:55.000Z</lastmod>
+    <lastmod>2016-03-31T07:40:04.000Z</lastmod>
     <data>
         <display>
         <title>2016-3-31阅读记录</title>
@@ -27,6 +26,29 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/03/30/2016-3-30%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2016-03-31T07:39:16.000Z</lastmod>
+    <data>
+        <display>
+        <title>2016-3-30阅读记录</title>
+        <pubTime>2016-03-30T08:31:15.000Z</pubTime>
+        
+        <tag>技巧</tag>
+         
+        <tag>记录</tag>
+         
+         
+           
+             
+              <breadCrumb title="日常阅读记录" url="http://yoursite.com/categories/%E6%97%A5%E5%B8%B8%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
     <loc>http://yoursite.com/2016/03/30/%E5%B7%A5%E4%BD%9C%E4%B8%80%E5%B9%B4%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2016-03-31T02:44:49.000Z</lastmod>
     <data>
@@ -40,28 +62,6 @@
            
              
               <breadCrumb title="感悟" url="http://yoursite.com/categories/%E6%84%9F%E6%82%9F/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/03/30/2016-3-30%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2016-03-30T09:08:33.000Z</lastmod>
-    <data>
-        <display>
-        <title>2016.3.30阅读记录</title>
-        <pubTime>2016-03-30T08:31:15.000Z</pubTime>
-        
-        <tag>技巧</tag>
-         
-        <tag>记录</tag>
-         
-         
-           
-             
-              <breadCrumb title="日常阅读记录" url="http://yoursite.com/categories/%E6%97%A5%E5%B8%B8%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95/"/>
           
         </display>
     </data>
