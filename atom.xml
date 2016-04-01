@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-31T07:41:48.000Z</updated>
+  <updated>2016-04-01T08:11:12.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2016-4-1阅读记录</title>
+    <link href="http://yoursite.com/2016/04/01/2016-4-1%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95/"/>
+    <id>http://yoursite.com/2016/04/01/2016-4-1阅读记录/</id>
+    <published>2016-04-01T07:46:25.000Z</published>
+    <updated>2016-04-01T08:11:12.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;愚人节快乐&quot;&gt;&lt;a href=&quot;#愚人节快乐&quot; class=&quot;headerlink&quot; title=&quot;愚人节快乐&quot;&gt;&lt;/a&gt;愚人节快乐&lt;/h2&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;hexo主题更换为yelee&quot;&gt;&lt;a href=&quot;#hexo主题更换为yelee&quot; class=&quot;headerlink&quot; title=&quot;hexo主题更换为yelee&quot;&gt;&lt;/a&gt;hexo主题更换为yelee&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;优化多说UA评论框&lt;/li&gt;
+&lt;li&gt;主题路径构成&lt;blockquote&gt;
+&lt;p&gt;yelee/_config.yml&lt;br&gt;—–/layout/_partial/article.ejs&lt;br&gt;———————/comments/disqus.ejs&lt;br&gt;——————————/duoshuo.ejs&lt;br&gt;——————————/youyan.ejs&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;多说查看ID(setting地址栏中就有)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;多说自定义CSS&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;参考文章&quot;&gt;&lt;a href=&quot;#参考文章&quot; class=&quot;headerlink&quot; title=&quot;参考文章&quot;&gt;&lt;/a&gt;参考文章&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/MOxFIVE/hexo-theme-yelee&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://moxfive.xyz/2015/09/29/duoshuo-style&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;多说个性化&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://wsgzao.github.io/post/duoshuo/#%E5%A4%9A%E8%AF%B4%E5%90%8E%E5%8F%B0%E8%87%AA%E5%AE%9A%E4%B9%89CSS&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;多说自定义CSS头像和多说评论显示UA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.tuicool.com/articles/jq2Aj2Z&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;为 Hexo 主题添加评论模块&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;愚人节快乐&quot;&gt;&lt;a href=&quot;#愚人节快乐&quot; class=&quot;headerlink&quot; title=&quot;愚人节快乐&quot;&gt;&lt;/a&gt;愚人节快乐&lt;/h2&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>2016-3-31阅读记录</title>
