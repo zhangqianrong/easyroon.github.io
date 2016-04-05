@@ -5,8 +5,7 @@
   
   <title>2016-4-5阅读记录 | EsayRoon&#39;s Notes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="##Hexo在两台电脑间的操作流畅
-###1.对电脑A的操作
+  <meta name="description" content="Hexo在两台电脑间的操作流畅###1.对电脑A的操作
 
 1.在github上新建仓库名为blog2.上传电脑中的的Hexo源文件
 
@@ -16,13 +15,12 @@
 
 12/.deploy_git/public
 
-3.依次执行如下命令,同步源文件到github123456789git init git add .git commit">
+3.依次执行如下命令,同步源文件到github123456789git init git add .git commit -m">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2016-4-5阅读记录">
 <meta property="og:url" content="http://yoursite.com/2016/04/05/2016-4-5阅读记录/index.html">
 <meta property="og:site_name" content="EsayRoon's Notes">
-<meta property="og:description" content="##Hexo在两台电脑间的操作流畅
-###1.对电脑A的操作
+<meta property="og:description" content="Hexo在两台电脑间的操作流畅###1.对电脑A的操作
 
 1.在github上新建仓库名为blog2.上传电脑中的的Hexo源文件
 
@@ -32,12 +30,11 @@
 
 12/.deploy_git/public
 
-3.依次执行如下命令,同步源文件到github123456789git init git add .git commit">
-<meta property="og:updated_time" content="2016-04-05T09:53:11.000Z">
+3.依次执行如下命令,同步源文件到github123456789git init git add .git commit -m">
+<meta property="og:updated_time" content="2016-04-05T10:24:53.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2016-4-5阅读记录">
-<meta name="twitter:description" content="##Hexo在两台电脑间的操作流畅
-###1.对电脑A的操作
+<meta name="twitter:description" content="Hexo在两台电脑间的操作流畅###1.对电脑A的操作
 
 1.在github上新建仓库名为blog2.上传电脑中的的Hexo源文件
 
@@ -47,7 +44,7 @@
 
 12/.deploy_git/public
 
-3.依次执行如下命令,同步源文件到github123456789git init git add .git commit">
+3.依次执行如下命令,同步源文件到github123456789git init git add .git commit -m">
   
     <link rel="alternative" href="/atom.xml" title="EsayRoon&#39;s Notes" type="application/atom+xml">
   
@@ -301,8 +298,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>##Hexo在两台电脑间的操作流畅</p>
-<p>###1.对电脑A的操作</p>
+        <h2 id="Hexo在两台电脑间的操作流畅"><a href="#Hexo在两台电脑间的操作流畅" class="headerlink" title="Hexo在两台电脑间的操作流畅"></a>Hexo在两台电脑间的操作流畅</h2><p>###1.对电脑A的操作</p>
 <blockquote>
 <p>1.在github上新建仓库名为blog<br>2.上传电脑中的的Hexo源文件</p>
 <ul>
@@ -315,8 +311,7 @@
 <p>3.依次执行如下命令,同步源文件到github<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">git init </span><br><span class="line">git add .</span><br><span class="line">git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">""</span></span><br><span class="line">git remote <span class="keyword">add</span> origin git@github.com:(你的仓库地址)</span><br><span class="line">git push -u origin <span class="keyword">master</span></span><br><span class="line">如果出错<span class="keyword">failed</span> <span class="keyword">to</span> push <span class="keyword">some</span> refs <span class="keyword">to</span> git 出现的只要原因是github中的readme.md文件</span><br><span class="line">git pull <span class="comment">--rebase origin master</span></span><br><span class="line">此时再执行语句</span><br><span class="line">git push -u origin <span class="keyword">master</span></span></span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <p>即可完成代码上传到github</p>
-<p>###2.对电脑B的操作</p>
-<blockquote>
+<h3 id="2-对电脑B的操作"><a href="#2-对电脑B的操作" class="headerlink" title="2.对电脑B的操作"></a>2.对电脑B的操作</h3><blockquote>
 <p>1.安装git,并且配置好github的.ssh<br>2.安装node.js<br>3.使用npm指令安装Hexo</p>
 </blockquote>
 <figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm isntall -<span class="keyword">g</span> hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure>
@@ -325,8 +320,7 @@
 </blockquote>
 <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">clone</span> <span class="title">git</span>@github.com(仓库地址)</span><br></pre></td></tr></table></figure>
 <p>至此,两个电脑的hexo环境一致,hexo博客文件一致</p>
-<p>###3.日常的改动流程</p>
-<blockquote>
+<h3 id="3-日常的改动流程"><a href="#3-日常的改动流程" class="headerlink" title="3.日常的改动流程"></a>3.日常的改动流程</h3><blockquote>
 <p>1.建议先检查更新git pull,将本地博客更新到一致版本</p>
 </blockquote>
 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">git</span> pull</span><br></pre></td></tr></table></figure>
@@ -354,7 +348,7 @@
         <p><span>本文标题:</span><a href="/2016/04/05/2016-4-5阅读记录/">2016-4-5阅读记录</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">EsayRoon&#39;s Notes</a></p>
         <p><span>发布时间:</span>2016-04-05, 17:34:05</p>
-        <p><span>最后更新:</span>2016-04-05, 17:53:11</p>
+        <p><span>最后更新:</span>2016-04-05, 18:24:53</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/04/05/2016-4-5阅读记录/" title="2016-4-5阅读记录">http://yoursite.com/2016/04/05/2016-4-5阅读记录/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/04/05/2016-4-5阅读记录/　　作者: EsayRoon&#39;s Notes" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -384,7 +378,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#参考文章"><span class="toc-number">1.</span> <span class="toc-text">参考文章</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo在两台电脑间的操作流畅"><span class="toc-number">1.</span> <span class="toc-text">Hexo在两台电脑间的操作流畅</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-对电脑B的操作"><span class="toc-number">1.1.</span> <span class="toc-text">2.对电脑B的操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-日常的改动流程"><span class="toc-number">1.2.</span> <span class="toc-text">3.日常的改动流程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考文章"><span class="toc-number">2.</span> <span class="toc-text">参考文章</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
