@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-05T10:32:56.000Z</updated>
+  <updated>2016-04-18T09:40:27.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,162 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Dell N5010安装Yosemite(传统bios+GPT,可升级到EI CAPITAN)</title>
+    <link href="http://yoursite.com/2016/04/18/Dell-N5010%E5%AE%89%E8%A3%85Yosemite-%E4%BC%A0%E7%BB%9Fbios-GPT-%E5%8F%AF%E5%8D%87%E7%BA%A7%E5%88%B0EI-CAPITAN/"/>
+    <id>http://yoursite.com/2016/04/18/Dell-N5010安装Yosemite-传统bios-GPT-可升级到EI-CAPITAN/</id>
+    <published>2016-04-18T03:37:21.000Z</published>
+    <updated>2016-04-18T09:40:27.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;上大学购置的第一台笔记本DELL N5010,戴尔的质量可是杠杠的&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;电脑型号&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;戴尔 Inspiron N5010 笔记本电脑&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;操作系统&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Yosemite10.10.5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;处理器&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;英特尔 Core i3 M 380 @ 2.53GHz 双核笔记本处理器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;主板&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;戴尔 0YXXJJ (英特尔 HM57 Express Series 芯片组)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;内存&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;4+2 GB ( 海力士 DDR3 1333MHz )&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;主硬盘&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;希捷 ST9500420AS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;显卡&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;ATI Mobility Radeon HD 5650  ( 1 GB / 戴尔 )&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;无线网卡&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;BCM4322 淘宝购入&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;OK.Let’s do it!&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;h3 id=&quot;制作启动盘&quot;&gt;&lt;a href=&quot;#制作启动盘&quot; class=&quot;headerlink&quot; title=&quot;制作启动盘&quot;&gt;&lt;/a&gt;制作启动盘&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;两个U盘,一个安装clover EFI引导(备用),一个用来写入安装系统&lt;/li&gt;
+&lt;li&gt;使用BootDiskUtility,写入默认的Clover引导(开机使用U盘驱动,然后选择Boot install mac在安全模式verbose boot下可以引导起来Yosemite,无须设置)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;BootDiskUtility     &lt;a href=&quot;http://bbs.pcbeta.com/viewthread-1658655-1-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用教程&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;制作系统盘&quot;&gt;&lt;a href=&quot;#制作系统盘&quot; class=&quot;headerlink&quot; title=&quot;制作系统盘&quot;&gt;&lt;/a&gt;制作系统盘&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;系统可在远景论坛下载,建议下载原版系统(我用的是自带EFI的版本),使用TransMac写入即可,放在一边备用&lt;h3 id=&quot;驱动HD5650显卡的准备工作-关键&quot;&gt;&lt;a href=&quot;#驱动HD5650显卡的准备工作-关键&quot; class=&quot;headerlink&quot; title=&quot;驱动HD5650显卡的准备工作(关键)&quot;&gt;&lt;/a&gt;驱动HD5650显卡的准备工作(关键)&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;在win7下使用&lt;strong&gt;EDIDViewer400&lt;/strong&gt;,导出你显示器屏幕的EDID,保存成文本备用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;如果是同款机型,可以在win7上安装MAC OS的虚拟机,然后直接在虚拟机里使用chn_DSDTSE把DSDT里面的EDID替换成你自己提取的,然后选择编译,完成后会弹出一个文件夹,保存备用.&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DSDT更改EDID教程&lt;br&gt;&lt;a href=&quot;http://bbs.pcbeta.com/viewthread-1277631-1-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ATI笔记本显卡内屏senseid为07的解法 5XXX和6XXX适用&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;正式安装&quot;&gt;&lt;a href=&quot;#正式安装&quot; class=&quot;headerlink&quot; title=&quot;正式安装&quot;&gt;&lt;/a&gt;正式安装&lt;/h2&gt;&lt;h3 id=&quot;完成引导开机&quot;&gt;&lt;a href=&quot;#完成引导开机&quot; class=&quot;headerlink&quot; title=&quot;完成引导开机&quot;&gt;&lt;/a&gt;完成引导开机&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;插入U盘引导,开机按F12&lt;/li&gt;
+&lt;li&gt;选择USB引导模式启动,在选择界面插入系统盘&lt;/li&gt;
+&lt;li&gt;看见BOOT MAC INSTALL等字样的,按下空格键,选择verbose boot启动,回车选择&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ps:系统验证的问题:如果你用的是带EFI的景象,那么会提示无法验证此镜像,不用怕,只要在命令行里输入:&lt;br&gt;&lt;code&gt;date 041302022015&lt;/code&gt;&lt;br&gt;然后关闭命令行即可,就可以继续安装了,这个的原理是修改到2015年4月13,就能通过验证了.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;分区安装&quot;&gt;&lt;a href=&quot;#分区安装&quot; class=&quot;headerlink&quot; title=&quot;分区安装&quot;&gt;&lt;/a&gt;分区安装&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;选择磁盘工具先格式化硬盘,格式选择日志扩展式,在磁盘分区上选择GPT分区模式,点击抹盘,等待完成即可&lt;/li&gt;
+&lt;li&gt;点击下一步,会提示一个意见信息,直接点击Agree&lt;/li&gt;
+&lt;li&gt;到达安装盘符的界面,选择你刚刚格式好的分区,选择,开始安装(大概需要20分钟,在20分钟后会提示安装成功,需要重启,确认即可)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;重启过程中重复安装引导的步骤,从引导进入,进入第二次正式安装&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;如果一切顺利的话,等待下次重启就可以拔掉系统盘了&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;EFI写入分区&quot;&gt;&lt;a href=&quot;#EFI写入分区&quot; class=&quot;headerlink&quot; title=&quot;EFI写入分区&quot;&gt;&lt;/a&gt;EFI写入分区&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;把clover EFI引导安装在磁盘EFI分区中&lt;/li&gt;
+&lt;li&gt;使用EFI CLOVER TOOLS工具,先格式化EFI分区,然后安装EFI clover&lt;/li&gt;
+&lt;li&gt;选项如下图:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;http://bbs.pcbeta.com/data/attachment/forum/201409/02/140734a4fqfqcmt19omi21.png&quot; alt=&quot;clover的配置&quot;&gt;&lt;br&gt;安装完成会多一个EFI分区&lt;br&gt;&lt;img src=&quot;http://bbs.pcbeta.com/data/attachment/forum/201409/02/143403j3b88kkxkjc35ojo.png&quot; alt=&quot;分区&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;安装详情参考&lt;a href=&quot;http://bbs.pcbeta.com/viewthread-1539527-1-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;【混脸熟（第二季）】Dell n5010 Yosemite完美驱动99.9%无痛升级历程分享&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;完善EFI&quot;&gt;&lt;a href=&quot;#完善EFI&quot; class=&quot;headerlink&quot; title=&quot;完善EFI&quot;&gt;&lt;/a&gt;完善EFI&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;完成后,把之前已经配置好的config.plist替换,安装相应驱动,然后把你编译好的DSDT,放入ACPI/PATCHED文件中,重启&lt;/li&gt;
+&lt;li&gt;重启的过程中可以拔出引导U盘了,然后就是激动人心的一刻了&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;工具下载打包下载&quot;&gt;&lt;a href=&quot;#工具下载打包下载&quot; class=&quot;headerlink&quot; title=&quot;工具下载打包下载:&quot;&gt;&lt;/a&gt;工具下载打包下载:&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;制作引导u盘工具 - BootDiskUtility&lt;/li&gt;
+&lt;li&gt;clover引导 - clover_v2.3&lt;/li&gt;
+&lt;li&gt;EDID提取 - EDIDViewer400&lt;/li&gt;
+&lt;li&gt;DSDT编译 - DSDTSE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;彩蛋环节&quot;&gt;&lt;a href=&quot;#彩蛋环节&quot; class=&quot;headerlink&quot; title=&quot;彩蛋环节:&quot;&gt;&lt;/a&gt;&lt;strong&gt;彩蛋环节:&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;作死的我还是想升级10.11&lt;br&gt;没错!!!!  &lt;/p&gt;
+&lt;p&gt;准备环节:&lt;br&gt;U盘中放入可以启动的引导Clover EFI文件&lt;/p&gt;
+&lt;p&gt;文件下载&lt;/p&gt;
+&lt;p&gt;插入提前写好系统的U盘,&lt;/p&gt;
+&lt;p&gt;选择到有系统的U盘(boot install EI capitan),空格,vboser boot启动&lt;br&gt;参考文章:&lt;br&gt;&lt;img src=&quot;http://bbs.pcbeta.com/viewthread-1667966-1-1.html&quot; alt=&quot;os 10.11安装&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://bbs.pcbeta.com/viewthread-1606179-1-1.html&quot; alt=&quot;升级安装os 10.10&quot;&gt;&lt;/p&gt;
+&lt;p&gt;剩下的步骤就和上文中的一样了&lt;br&gt;But,安装完成睡眠是不可以滴,声卡怎么也驱动不起来,所以这只是个彩蛋环节&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;上大学购置的第一台笔记本DELL N5010,戴尔的质量可是杠杠的&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;电脑型号&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;戴尔 Inspiron N5010 笔记本电脑&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;操作系统&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Yosemite10.10.5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;处理器&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;英特尔 Core i3 M 380 @ 2.53GHz 双核笔记本处理器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;主板&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;戴尔 0YXXJJ (英特尔 HM57 Express Series 芯片组)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;内存&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;4+2 GB ( 海力士 DDR3 1333MHz )&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;主硬盘&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;希捷 ST9500420AS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;显卡&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;ATI Mobility Radeon HD 5650  ( 1 GB / 戴尔 )&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;无线网卡&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;BCM4322 淘宝购入&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;OK.Let’s do it!&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>2016-4-5阅读记录</title>
