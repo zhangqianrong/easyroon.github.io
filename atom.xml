@@ -44,7 +44,7 @@
     <link href="http://yoursite.com/2016/04/18/Dell-N5010%E5%AE%89%E8%A3%85Yosemite-%E4%BC%A0%E7%BB%9Fbios-GPT-%E5%8F%AF%E5%8D%87%E7%BA%A7%E5%88%B0EI-CAPITAN/"/>
     <id>http://yoursite.com/2016/04/18/Dell-N5010安装Yosemite-传统bios-GPT-可升级到EI-CAPITAN/</id>
     <published>2016-04-18T03:37:21.000Z</published>
-    <updated>2016-04-18T09:40:27.000Z</updated>
+    <updated>2016-04-21T02:59:33.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;上大学购置的第一台笔记本DELL N5010,戴尔的质量可是杠杠的&lt;/p&gt;
 &lt;table&gt;
@@ -142,8 +142,9 @@
 &lt;p&gt;准备环节:&lt;br&gt;U盘中放入可以启动的引导Clover EFI文件&lt;/p&gt;
 &lt;p&gt;文件下载&lt;/p&gt;
 &lt;p&gt;插入提前写好系统的U盘,&lt;/p&gt;
-&lt;p&gt;选择到有系统的U盘(boot install EI capitan),空格,vboser boot启动&lt;br&gt;参考文章:&lt;br&gt;&lt;img src=&quot;http://bbs.pcbeta.com/viewthread-1667966-1-1.html&quot; alt=&quot;os 10.11安装&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://bbs.pcbeta.com/viewthread-1606179-1-1.html&quot; alt=&quot;升级安装os 10.10&quot;&gt;&lt;/p&gt;
+&lt;p&gt;选择到有系统的U盘(boot install EI capitan),空格,vboser boot启动&lt;br&gt;参考文章:&lt;br&gt;&lt;a href=&quot;http://bbs.pcbeta.com/viewthread-1667966-1-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;os 10.11安装&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://bbs.pcbeta.com/viewthread-1606179-1-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;升级安装os 10.10&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;剩下的步骤就和上文中的一样了&lt;br&gt;But,安装完成睡眠是不可以滴,声卡怎么也驱动不起来,所以这只是个彩蛋环节&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xr4es.com1.z0.glb.clouddn.com/16-4-21/49273184.jpg&quot; alt=&quot;完成图,自动忽略桌子很乱&quot;&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
