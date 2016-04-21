@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-18T09:40:27.000Z</updated>
+  <updated>2016-04-21T02:26:48.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的知乎周年纪念</title>
+    <link href="http://yoursite.com/2016/04/21/%E6%88%91%E7%9A%84%E7%9F%A5%E4%B9%8E%E5%91%A8%E5%B9%B4%E7%BA%AA%E5%BF%B5/"/>
+    <id>http://yoursite.com/2016/04/21/我的知乎周年纪念/</id>
+    <published>2016-04-21T01:45:57.000Z</published>
+    <updated>2016-04-21T02:26:48.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;知乎周年纪念&quot;&gt;&lt;a href=&quot;#知乎周年纪念&quot; class=&quot;headerlink&quot; title=&quot;知乎周年纪念&quot;&gt;&lt;/a&gt;知乎周年纪念&lt;/h2&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;iframe height=&quot;498&quot; width=&quot;510&quot; src=&quot;http://player.youku.com/embed/XMTU0MTY0NjQwNA==&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+
+
+
+
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;知乎周年纪念&quot;&gt;&lt;a href=&quot;#知乎周年纪念&quot; class=&quot;headerlink&quot; title=&quot;知乎周年纪念&quot;&gt;&lt;/a&gt;知乎周年纪念&lt;/h2&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Dell N5010安装Yosemite(传统bios+GPT,可升级到EI CAPITAN)</title>
