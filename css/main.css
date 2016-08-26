@@ -495,7 +495,7 @@ pre,
 .highlight {
   overflow: auto;
   margin: 20px 0;
-  padding: 15px;
+  padding: 0;
   font-size: 13px;
   color: #c5c8c6;
   background: #1d1f21;
@@ -519,10 +519,13 @@ pre code {
   background: none;
   text-shadow: none;
 }
+.highlight {
+  border-radius: 1px;
+}
 .highlight pre {
   border: none;
   margin: 0;
-  padding: 1px;
+  padding: 10px 0;
 }
 .highlight table {
   margin: 0;
@@ -555,9 +558,16 @@ pre code {
   border-bottom-color: #c5c8c6;
 }
 .highlight .gutter pre {
-  color: #666;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #888f96;
   text-align: right;
-  padding-right: 20px;
+  background-color: #000;
+}
+.highlight .code pre {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #1d1f21;
 }
 .highlight .line {
   height: 20px;
@@ -803,7 +813,8 @@ pre .javascript .function {
 .pagination .next {
   margin-right: 0;
 }
-.pagination .page-number.current {
+.pagination .page-number.current,
+.algolia-pagination .current .page-number {
   color: #fff;
   background: #ccc;
   border-top-color: #ccc;
@@ -1325,20 +1336,24 @@ pre .javascript .function {
   font-size: 13px;
 }
 .post-nav {
-  overflow: hidden;
+  display: table;
   margin-top: 60px;
-  padding: 10px;
-  white-space: nowrap;
+  width: 100%;
   border-top: 1px solid #eee;
 }
+.post-nav-divider {
+  display: table-cell;
+  width: 10%;
+}
 .post-nav-item {
-  display: inline-block;
-  width: 50%;
-  white-space: normal;
+  display: table-cell;
+  padding: 10px 0 0 0;
+  width: 45%;
+  vertical-align: top;
 }
 .post-nav-item a {
   position: relative;
-  display: inline-block;
+  display: block;
   line-height: 25px;
   font-size: 14px;
   color: #555;
@@ -1351,11 +1366,24 @@ pre .javascript .function {
 .post-nav-item a:active {
   top: 2px;
 }
-.post-nav-item a i {
+.post-nav-item .fa {
+  position: absolute;
+  top: 8px;
+  left: 0;
   font-size: 12px;
+}
+.post-nav-next a {
+  padding-left: 15px;
 }
 .post-nav-prev {
   text-align: right;
+}
+.post-nav-prev a {
+  padding-right: 15px;
+}
+.post-nav-prev .fa {
+  right: 0;
+  left: auto;
 }
 .posts-expand .post-eof {
   display: block;
@@ -1549,7 +1577,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1c066a;
+  background: #0aa1b1;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2073,6 +2101,102 @@ a.search-result {
 .site-uv::after {
   content: "|";
   padding-left: 10px;
+}
+.algolia-popup {
+  overflow: hidden;
+  padding: 0;
+}
+.algolia-popup .popup-btn-close {
+  padding-left: 15px;
+  border-left: 1px solid #eee;
+  top: 10px;
+}
+.algolia-popup .popup-btn-close .fa {
+  color: #999;
+  font-size: 18px;
+}
+.algolia-popup .popup-btn-close:hover .fa {
+  color: #222;
+}
+.algolia-search {
+  padding: 10px 15px 5px;
+  max-height: 50px;
+  border-bottom: 1px solid #ccc;
+  background: #f5f5f5;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.algolia-search-input-icon {
+  display: inline-block;
+  width: 20px;
+}
+.algolia-search-input-icon .fa {
+  font-size: 18px;
+}
+.algolia-search-input {
+  display: inline-block;
+  width: calc(90% - 20px);
+}
+.algolia-search-input input {
+  padding: 5px 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+.algolia-powered {
+  float: right;
+}
+.algolia-powered img {
+  display: inline-block;
+  height: 18px;
+  vertical-align: middle;
+}
+.algolia-results {
+  position: relative;
+  overflow: auto;
+  padding: 10px 30px;
+  height: calc(100% - 50px);
+}
+.algolia-results hr {
+  margin: 10px 0;
+}
+.algolia-results .highlight {
+  font-style: normal;
+  margin: 0;
+  padding: 0 2px;
+  font-size: inherit;
+  color: #f00;
+}
+.algolia-hits {
+  margin-top: 20px;
+}
+.algolia-hit-item {
+  margin: 15px 0;
+}
+.algolia-hit-item-link {
+  display: block;
+  border-bottom: 1px dashed #ccc;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+.algolia-pagination .pagination {
+  margin-top: 40px;
+  border-top: none;
+  padding: 0;
+}
+.algolia-pagination .pagination-item {
+  display: inline-block;
+}
+.algolia-pagination .page-number {
+  border-top: none;
+}
+.algolia-pagination .page-number:hover {
+  border-bottom: 1px solid #222;
+}
+.algolia-pagination .disabled-item {
+  visibility: hidden;
 }
 .use-motion .post {
   opacity: 0;
